@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-azul: #008CFF;
+    --cor-azulEcuro:#002F78;
+    --cor-laranja: #FF7300;
+    --cor-neutra: #EBE4E9;
+    --background-gradient: linear-gradient(90deg, #002F78 0%, #008CFF 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color: var(--cor-laranja);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.mobileIcon{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+
+.contentHeader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.contentHeader img{
+    width: 6rem;
+    border-radius: 50%;
+}
+
+#navigationSite ul{
+    display: flex;
+    gap: 2rem;
+}
+
+#navigationSite ul li{
+    list-style: none;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: var(--cor-neutra);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .3s ease;
+
+}
+
+#navigationSite ul li a:hover{
+    border-bottom: 3px solid var(--cor-azul);
+    font-size: 1.5rem;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--cor-neutra);
+    color: var(--cor-azul);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    color: var(--cor-azulEcuro);
+}
+
+#sectionHome{
+      display: flex;
+      width: 100%;
+      height: 80vh;
+      background: var(--background-gradient);
+      justify-content: center;
+      align-items: center;
+      padding: 0 1.5rem;
+}
+
+#sectionHome .textHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 95%;
+}
+
+#sectionHome .textHome h1,
+h2{
+    color: var(--cor-neutra);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#sectionHome .imgPropaganda img{
+    width: 95%;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#cardsResult{
+    width: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+
+
+.cardWrapper{
+    padding: 1.5rem 2rem;
+}
+
+.cards{
+    z-index: 1;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transition: transform 0.6s;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-inner:hover .card-front {
+    transform: rotateY(180deg); 
+}
+
+.card-inner:hover .card-back {
+    transform: rotateY(0);
+}
+
+
+
+#cardsResult li{
+    height: 500px;
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 13 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: var(--cor-neutra);
+    list-style: none;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;   
+    border: 3px solid var(--cor-azul); 
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);    
+    scale: .9;
+    transition:border .5 ease;
+}
+
+.card h1{
+    margin-top: 1rem;
+    background-color: #0409EB;
+    width: fit-content;
+    font-size: .9rem;
+    border-radius: 50px;
+    padding: .6rem;
+
+}
+
+.card p{
+    margin: .7rem 0 0.3rem 0rem;
+    font-size: .93rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 13px;
+}
+
+.card a{
+    font-size: 1.1rem;
+}
+
+
+
+
+.material-symbols-outlined:hover{
+    background-color: #0409EB;
+    color: var(--cor-secundaria);
+}
+
+#megaSena h1{
+    color:#007A33;
+    background: #A5D6A7;
+}
+
+.btnCardComprar{
+    text-decoration: none;
+    background-color: var(--cor-neutra);
+    color: var(--cor-azulEcuro);
+    border: 3px solid var(--cor-laranja);
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.btnCardComprar:hover{
+    background-color: var(--cor-laranja);
+    color: var(--cor-neutra);
+    font-weight: 600;
+}
+
+
+#duplaSena h1{
+    color: #7A2C2C;
+    background-color: #C98E8E;
+}
+#Quina h1{
+    color:#4B0E67;
+    background-color: #A67DC2;
+}
+#federal h1{
+    color:#003366;
+    background-color: #66B2E0;
+}
+#lotofacil h1{
+    color: #cc0066;
+    background-color: #ff99cc;
+}
+#lotomania h1{
+    color:#D65F0D;
+    background-color: #FFB74D;
+}
+#maisMilionaria h1{
+    color: #f1d225;
+    background-color: #126d83;
+}
+#superSete h1{
+    color: #d6edc6; 
+    background-color: #aeae03;
+}
+#diaSorte h1{
+    color: #ffff92;
+    background-color: #f5b810;
+}
+
+#timeMania h1{
+    color: #009C3B;
+    background-color: #FFDF00;
+}
+
+#sectionComojogar{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionComojogar h1, 
+#sectionComojogar h2 {
+    color: var(--cor-azulEcuro);
+    font-size: 2.5rem;
+}
+
+.instruction{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.instruction ul{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.instruction ul li{
+    list-style: none;
+    border: 2px solid var(--cor-azul);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 33%;
+    height: 250px;
+}
+
+.instruction ul .first{
+    height: 320px;
+}
+
+.instruction ul .first .btnStep{
+    border: 2px solid var(--cor-laranja);
+    text-decoration: none;
+    padding: .6rem;
+    background-color: var(--cor-neutra);
+    color: var(--cor-azul);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+.instruction ul .first .btnStep:hover{
+    background-color: var(--cor-laranja);
+    color: var(--cor-neutra);
+}
+
+.instruction ul li h1{
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+}
+
+.instruction ul li p{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.instruction img{
+    width: 20%;
+    
+}
+
+#sectionContats{
+    width: 100%;
+    background-image: url(../imgindex/jogoBackground.png);
+    margin-bottom: 3.5rem;
+}
+
+#sectionContats h1{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-azulEcuro);
+    font-size: 2.5rem;
+    border-top: 3px solid var(--cor-laranja);
+    padding: 30px 0;
+}
+
+.contatosLocalizacao{
+    display: flex;
+    align-items: center;
+    padding: 0 9rem;
+}
+
+.contatosLocalizacao p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--cor-azulEcuro);
+}
+
+#map{
+    border: 5px solid var(--cor-azulEcuro);
+    border-radius: 15px;
+}
+
+footer{
+    width: 100%;
+    background: var(--background-gradient);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer p{
+    color: var(--cor-neutra);
+    border-bottom: 2px solid var(--cor-azul);
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .menuSite{
+        display: none;
+    }
+
+    .acesso{
+        display: none;
+    }
+
+    .mobileIcon{
+        display: block;
+    }
+    
+    .mobileIcon button{
+        background-color: transparent;
+        border: none;
+        padding: .3rem;
+        cursor: pointer;
+    }
+
+    .mobileIcon button:hover{
+        background-color: var(--cor-azul);
+        border-radius: 5px;
+        
+    }
+
+
+    .open{
+        display: block;
+    }
+
+    .mobileMenu .btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--cor-neutra);
+        margin-top: 2rem;
+
+    }
+
+    .mobileMenu ul li{
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .linkNavMob{
+        text-decoration: none;
+        color: var(--cor-neutra);
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: .4s ease;
+    }
+
+    .linkNavMob:hover{
+        font-size: 1.5rem;
+    }
+
+    #sectionHome{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .textHome{
+        padding: 0.7rem 0;
+    }
+
+    #sectionComojogar{
+        border-top: 2px solid var(--cor-laranja);
+        padding: 2rem;
+    }
+
+    .instruction{
+        flex-direction: column;
+    }
+
+    .instruction img{
+        width: 300px;
+    }
+
+    .cardInstruction{
+        flex-direction: column;
+    }
+
+    .cardInstruction .cardStep{
+        width: 300px;
+    }
+
+    #sectionContats{
+        text-align: center;
+    }
+
+
+    .contatosLocalizacao{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contatosLocalizacao p{
+        display: none;
+    }
+
+    #map{
+        flex-shrink: 0;
+        width: 350px !important;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lotérica Vida Nova - Aposte com segurança nos Bolões oficiais da Caixa.">
+  <meta name="keywords" content="Loteria, Mega Sena, Dupla Sena, Quina, Lotofácil, apostas online">
+
+  <title>Loterica Vida Nova</title>
+  <link rel="stylesheet" href="CSS/index-style.css" />
+  <script src="JS/script.js" defer></script>
+  <script src="JS/card.js" defer></script>
+  <script src="JS/cardSwiper.js" defer></script>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="JS/map.js" defer></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="contentHeader">
+      
+      <img src="img/logoLoterica.jpg" alt="Logo da Lotérica Vida Nova" />
+      <div class="menuSite">
+      <nav id="navigationSite">
+        <ul>
+          <li><a href="#" class="linkNav">Home</a></li>
+          <li><a href="#cardsResult" class="linkNav">Loterias</a></li>
+          <li><a href="#" class="linkNav">Contatos</a></li>
+          <li><a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" class="btn " target="_blank"
+            rel="noopener">Quero apostar!</a></li>
+        </ul>
+      </nav>
+      
+      </div>
+
+        <div class="mobileIcon">
+          <button onclick="menuAparecer()"><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#EBE4E9"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg></button>
+        </div>
+
+      </div>
+      <div class="mobileMenu">
+        <ul class="listNav">
+          <li><a href="#cardsResult" class="linkNavMob">Loterias</a></li>
+          <li><a href="#sectionContats" class="linkNavMob">Localização</a></li>
+          <li><a href="footer" class="linkNavMob">Contato</a></li>         
+        </ul>
+        <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" class="btn" target="_blank"
+        rel="noopener">Quero apostar!</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sectionHome">
+      <div class="textHome">
+        <h1>Lotérica Vida Nova</h1>
+        <h2>Agora você pode jogar online nos Bolões oficiais da Caixa, via site oficial Caixa ou WhatsApp da lotérica
+          com total segurança e conforto!</h2>
+
+        <div class="linkAposte"></div>
+        <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" class="btn" target="_blank"
+          rel="noopener">Quero apostar !</a>
+      </div>
+      <div class="imgPropaganda">
+        <a href="#"><img src="imgindex/megaVIrada.jpg" alt=""></a>
+      </div>
+    </section>
+
+    <section id="cardsResult">
+      <div class="containerCards swiper">
+        <div class="cardWrapper">
+          <ul class="cards swiper-wrapper">
+            <li id="megaSena" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoMega.png" alt="Jogos mega sena" />
+                  <h1>Loteria: Mega Sena</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Mega?</h1>
+                  <p>
+                    A Mega-Sena paga milhões para o acertador dos 6 números sorteados. Ainda é possível ganhar prêmios
+                    ao acertar 4 ou 5 números dentre os 60 disponíveis no volante de apostas. Para realizar o sonho de
+                    ser milionário, você deve marcar de 6 a 20 números do volante, podendo deixar que o sistema escolha
+                    os números para você (Surpresinha) e/ou concorrer com a mesma aposta por 2, 3, 4, 6, 8, 9 e 12
+                    concursos consecutivos (Teimosinha).
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="duplaSena" class="card swiper-slide">
+
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoDupla.png" alt="Dupla sena" />
+                  <h1>Loteria: Dupla Sena</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Dupla?</h1>
+                  <p>Para jogar na Dupla Sena, o interessado apostará em dois sorteios por concurso ao escolher de 6 a 15 números dos cinquenta disponíveis no volante. Ganha na modalidade quem acerta 3, 4, 5 ou 6 números no primeiro e/ou segundo sorteios.<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="Quina" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoQuina.png" alt="Quina" />
+                  <h1>Loteria: Quina</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Quina?</h1>
+                  <p>
+                    Para jogar na Quina, é preciso escolher de 5 a 15 números dentre os 80 disponíveis. Também é possível optar pela Surpresinha da Quina – nesse caso, os números são escolhidos pela Caixa Econômica Federal, que administra a loteria. São premiadas as apostas que acertarem de 2 a 5 números.<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="federal" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogofederal.png" alt="Jodo federal" />
+                  <h1>Loteria: Federal</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Bilhetes premiados:</p>
+
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Federal?</h1>
+                  <p>
+                    Basta você escolher o bilhete exposto na casa lotérica. Você escolhe o número impresso no bilhete que quer concorrer, conforme disponibilização no momento da compra.<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="lotofacil" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoLfacil.png" alt="" />
+                  <h1>Loteria: Lotofácil</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Lotofácil?</h1>
+                  <p>
+                    Você marca entre 15 a 18 números, dentre os 25 disponíveis no volante, e fatura o prêmio se acertar 11, 12, 13, 14 ou 15 números. Pode ainda deixar que o sistema escolha os números para você por meio da Surpresinha, ou concorrer com a mesma aposta por 3, 6, 9 ou 12 concursos consecutivos através da Teimosinha. <br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="lotomania" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoLotomania.png" alt="" />
+                  <h1>Loteria: Lotomania</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Lotomania?</h1>
+                  <p>
+                    A Lotomania é fácil de jogar e de ganhar: basta escolher 50 números e então concorrer a prêmios para acertos de 20, 19, 18, 17, 16, 15 ou nenhum número.
+                    Além da opção de marcar no volante, você ainda pode marcar menos que 50 números e deixar que o sistema complete o jogo para você; não marcar nada e deixar que o sistema escolha todos os números na Surpresinha e/ou concorrer com a mesma aposta por 2, 4 ou 8 concursos consecutivos com a Teimosinha<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="maisMilionaria" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoMaimilionaria (1).png" alt="" />
+                  <h1>Loteria: Mais Milionária</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard" id="trevo">Trevos:</p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Mais Milionaria?</h1>
+                  <p>
+                    Para registrar uma aposta simples, você escolhe 6 números na Matriz de Números e marca dois trevos no espaço logo abaixo, na Matriz de Trevos Numerados. Se quiser contar com a sorte, pode deixar que o sistema escolha os números para você, com a aposta Surpresinha.<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="superSete" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoSuperSete.png" alt="" />
+                  <h1>Loteria: Super Sete</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard"></p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar na Super Sete?</h1>
+                  <p>
+                    O Super Sete é a loteria de prognósticos numéricos cujo volante contém 7 colunas com 10 números (de 0 a 9) em cada uma, de forma que o apostador deverá escolher um número por coluna. Caso opte por fazer apostas múltiplas, poderá escolher até mais 14 números (totalizando 21 números no máximo), sendo no mínimo 1 e no máximo 2 números por coluna com 8 a 14 números marcados e no mínimo 2 e no máximo 3 números por coluna com 15 a 21 números marcados. São sorteados sete números (um por coluna). Você pode deixar, ainda, que o sistema escolha os números para você (Surpresinha) e/ou continuar com o seu jogo por 3, 6,  9 ou 12 concursos consecutivos (Teimosinha).<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="diaSorte" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoDiadeSorte.png" alt="" />
+                  <h1>Loteria: Dia de Sorte</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard" id="mesSorte">Mês sorte:</p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar no Dia de Sorte?</h1>
+                  <p>
+                    O Dia de Sorte é a loteria onde você aposta seus números da sorte. Escolha de 7 a 15 números dentre os 31 disponíveis e mais 1 “Mês de Sorte”. São sorteados sete números e um “Mês de Sorte” por concurso. Você pode deixar, ainda, que o sistema escolha os números para você (Surpresinha) e/ou continuar com o seu jogo por 3, 6, 9 ou 12 concursos consecutivos (Teimosinha).<br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                  href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+            <li id="timeMania" class="card swiper-slide">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/jogoTimemania.png" alt="" />
+                  <h1>Loteria: Timemania</h1>
+                  <p class="descriptionCard">Concurso:</p>
+                  <p class="descriptionCard">Data:</p>
+                  <p class="descriptionCard">Dezenas:</p>
+                  <p class="descriptionCard">Time do coração:</p>
+                  <p class="descriptionCard"></p>
+                </div>
+                <div class="card-back">
+                  <h1>Como jogar no Time Mania?</h1>
+                  <p>
+                    A Timemania é a loteria para os apaixonados por futebol. Além de o seu palpite valer uma bolada, você ainda ajuda o seu time do coração.
+Você escolhe dez números entre os oitenta disponíveis e um Time do Coração. São sorteados sete números e um Time do Coração por concurso. Se você tiver de três a sete acertos, ou acertar o time do coração, ganha.
+
+Você pode deixar, ainda, que o sistema escolha os números para você (Surpresinha) ou concorrer com a mesma aposta por 3, 6, 9, ou 12 concursos consecutivos através da Teimosinha. <br />
+                    Concorra a prêmios incríveis!
+                  </p>
+                  <a class="btnCardComprar"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" target="_blank">Compre nossos Bolões</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sectionComojogar">
+      <h1>Como participar dos bolões Online?</h1>
+      <h2>Siga os próximos passos!</h2>
+      <div class="instruction">
+        <ul class="cardInstruction">
+          <li class="cardStep first">
+            <h1>Acesse o site ou mande mensagem via WhatsApp.</h1>
+            <p>Para começar, clique no botão 'Quero apostar!' para ser redirecionado à loja de bolões, ou clique no
+              símbolo do WhatsApp para falar diretamente conosco.</p>
+            <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/bolao-caixa/2137" class="btnStep" target="_blank">Quero
+              apostar!</a>
+
+          </li>
+          <li class="cardStep">
+            <h1>Cadastre-se!</h1>
+            <p>No seu primeiro acesso, crie sua conta em poucos minutos. Após o cadastro, será enviado um código de
+              confirmação. Insira o código para ativar sua conta.</p>
+          </li>
+          <li class="cardStep">
+            <h1>Acesso a loja de bolões.</h1>
+            <p>Com sua conta ativa, busque nossa loja 'Lotca Vida Nova 2137' para ter acesso aos melhores bolões, ou
+              clique no botão 'Quero apostar!' do site para ser redirecionado diretamente à loja. </p>
+          </li>
+        </ul>
+        <img src="imgindex/Hand Holding Phone Screen Styled Photos for Your Story Instagram Feed.png"
+          alt="Mão segurando celular com loja de bolões">
+      </div>
+
+    </section>
+
+    <section id="sectionContats">
+      <h1>Nossa localização.</h1>
+      <div class="contatosLocalizacao">
+        <p>Estamos localizados na zona sul da cidade de São Paulo, na Av. Santa Carina-Vila Mascote.</p>
+        
+        <div id="map" style="width: 100%; height:400px;">
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <p>Lotérica Vida Nova</p>
+    <p>Av. Santa Catarina, 1278 - Vila Mascote-São Paulo - SP</p>
+    <p>CEP: 04378-000</p>
+    <div class="icons">
+      <a href="https://wa.me/5511931504037" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 48px; color: green;"></i>
+      </a>
+      <a href="https://www.instagram.com/loterica.vidanova/" target="_blank">
+        <i class="fab fa-instagram" style="font-size: 48px; color: #C13584;"></i>
+      </a>
+      <a href="#https://www.facebook.com/seuperfil" target="_blank">
+        <i class="fab fa-facebook" style="font-size: 48px; color: #3b5998;"></i>
+      </a>
+    </div>
+
+  </footer>
+
+
+  <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+      ({ key: "AIzaSyB3EeHwb1wyuHP56twlwg6EJ4rnhdo6fG8", v: "weekly" });</script>
+</body>
+
+</html>
